@@ -56,7 +56,8 @@ class Song
   def self.create_from_filename(title)
     fix_song = title.split(" - ")
     fix_song[1] = fix_song[1].chomp(".mp3")
-    fix_song[1] = self.create
+    fix_song[1] = song
+    song = self.create
   end
   
   def self.destroy_all
