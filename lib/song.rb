@@ -41,7 +41,7 @@ class Song
     end
   end
   def self.aplhabetical
-    self.all.sort 
+    self.all.sort_by{|song| song.name}
   end
 
 end
