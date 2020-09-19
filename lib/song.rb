@@ -52,4 +52,8 @@ class Song
     song.artist_name = fix_song[0]
     song
   end
+  
+  def self.destroy_all
+    @@all = []
+  end
 end
