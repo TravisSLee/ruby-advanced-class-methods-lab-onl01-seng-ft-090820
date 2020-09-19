@@ -50,8 +50,10 @@ class Song
     song = self.new
     song.name = fix_song[1]
     song.artist_name = fix_song[0]
-    song
+    
   end
+  
+  
   
   def self.destroy_all
     @@all = []
